@@ -16,12 +16,15 @@ public class PrincipalTP3 {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        Gallina gala = new Gallina();
-        Gallina gali = new Gallina();
+       Libro libro_A = new Libro();
+        System.out.println(libro_A.getAnioPublicacion());
+        libro_A.setAnioPublicacion((-1995));
+        System.out.println(libro_A.getAnioPublicacion());
+        libro_A.setAnioPublicacion((1889));
+        System.out.println(libro_A.getAnioPublicacion());
         
-        gala.ponerHuevo(gala.getHuevosPuestos(2));
-        gala.mostrarEstado();
-        gali.ponerHuevo(gali.getHuevosPuestos(6));
-     
+        
+        
+       
     } 
 }
