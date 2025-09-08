@@ -66,8 +66,8 @@ public class Empleado {
         return "id: "+ id +" "+ "Nombre: " + nombre +" "+ "Puesto: " + puesto +" "+ "Salario: " + salario + " pesos.";   
     }
     
-    static int mostrarTotalEmpleados(){
-        return getTotalEmpleados();
+    static String mostrarTotalEmpleados(){
+        return "La cantidad de empleados es: " + getTotalEmpleados();
     }
     
     
