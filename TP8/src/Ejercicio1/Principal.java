@@ -26,9 +26,16 @@ public class Principal {
         System.out.println("Total del pedido: $" + pedido.calcularTotal());
 
         // se paga con tarjeta
-        TarjetaCredito pagoTarjeta = new TarjetaCredito("Roja");
-        double montoConDescuento = pagoTarjeta.aplicarDescuento(pedido.calcularTotal());
-        pagoTarjeta.procesarPago(montoConDescuento);
+        TarjetaCredito pagarConTarjeta = new TarjetaCredito("Roja");
+        double montoConDescuento = pagarConTarjeta.aplicarDescuento(pedido.calcularTotal());
+        pagarConTarjeta.procesarPago(montoConDescuento);
+        
+        // se paga con Paypal
+        PayPal pagarConPayPal = new PayPal("Accesor1");
+        double monto = pedido.calcularTotal();
+        pagarConPayPal.procesarPago(monto);
+        
+        
 
         // cambio de estado
         pedido.cambiarEstado("Enviado");

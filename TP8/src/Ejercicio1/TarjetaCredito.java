@@ -14,9 +14,9 @@ public class TarjetaCredito implements PagoConDescuento {
         this.nombre_tarjeta = nombre_tarjeta;
     }
     
-    public void TarjetaCredito(String nombre_tarjeta) {
-        this.nombre_tarjeta = nombre_tarjeta;
-    }
+//    public void TarjetaCredito(String nombre_tarjeta) {
+//        this.nombre_tarjeta = nombre_tarjeta;
+//    }
 
     @Override
     public double aplicarDescuento(double total) {
